@@ -25,4 +25,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(CryptoContainer)
+export default connect(mapStateToProps, {FetchCoinData})(CryptoContainer)

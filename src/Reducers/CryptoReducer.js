@@ -23,7 +23,7 @@ export default function(state = initialState, action){
         errorMessage: null
       });
 
-    case FETCHING_COIN_SUCCESS:
+    case FETCHING_COIN_DATA_SUCCESS:
       return Object.assign({}, state, {
         isFetching: false,
         data: action.payload,
@@ -31,7 +31,7 @@ export default function(state = initialState, action){
         errorMessage: null
       });
 
-    case FETCHING_COIN_DATA:
+    case FETCHING_COIN_DATA_FAIL:
       return Object.assign({}, state, {
         isFetching: false,
         data: action.payload,
